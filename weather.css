@@ -190,3 +190,13 @@ body {
 
 
 }
+
+@media only screen and (max-width : 10000px){
+    .future{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+    
+
+}
