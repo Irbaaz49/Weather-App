@@ -25,7 +25,7 @@ setInterval(() => {
     const min = minutes < 10 ? '0' + minutes : minutes;
     const ampm = hour >= 12 ? 'PM' : 'AM';
 
-    time.innerHTML = hoursIn12HFormat + ':' + min + ' ' + `<span id="am-pm">${ampm}</span>`;
+    time.innerHTML = hoursIn12HFormat + ':' + min+`<span id="am-pm">${ampm}</span>`;
     date.innerHTML = days[day] + ', ' + dte + ' ' + months[month];
 
 }, 1000);
