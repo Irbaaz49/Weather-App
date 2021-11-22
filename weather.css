@@ -78,8 +78,8 @@ body {
 
 .future {
     display: flex;
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
     position: fixed;
     bottom: 0;
     border: 1px solid rgba(238, 238, 238, 0.296);
@@ -88,6 +88,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    overflow-x: scroll;
 }
 
 .future .today {
@@ -97,11 +98,13 @@ body {
     background: rgba(24, 24, 27, 0.6);
     border: 1px solid rgba(238, 238, 238, 0.296);
     border-radius: 10px;
-    padding: 15px;
-    margin: 0 10px;
-    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin: 0px 10px;
+    flex-direction: row;
     align-items: center;
     justify-self: center;
+    
 }
 .future .today .other .day{
     padding: 5px 15px;
@@ -191,11 +194,12 @@ body {
 
 }
 
-@media only screen and (max-width : 10000px){
+@media only screen and (max-width : 1000px){
     .future{
         justify-content: start;
         align-items: none;
         overflow-x: scroll;
+        
     }
     
 

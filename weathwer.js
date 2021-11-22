@@ -82,17 +82,17 @@ function showWeatherData(data) {
             current.innerHTML = ` <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png" alt="weather icon" class="w-icon">
             <div class="other">
                 <div class="day">${window.moment(day.dt * 1000).format('ddd')}</div>
-                <div class="temp">Night<br> - ${day.temp.night}&#176;C</div>
-                <div class="temp">Day <br> - ${day.temp.night}&#176;C</div>
+                <div class="temp">Day<br> - ${day.temp.day}&#176;C</div>
+                <div class="temp">Night <br> - ${day.temp.night}&#176;C</div>
             </div>`
         }
         else {
             otherDayForcast += ` <div class="weather-forcast-item">
 <div class="day">${window.moment(day.dt * 1000).format('ddd')}</div>
 <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class="icon">
-<div class="temp">Night <br>&nbsp-<br>${day.temp.night}&#176; C</div>
-
-<div class="temp">Day<br> -<br>${day.temp.night}&#176;C</div>
+<div class="temp">Day <br>&nbsp-<br>${day.temp.day}&#176; C</div>
+<br>
+<div class="temp">Night<br> -<br>${day.temp.night}&#176;C</div>
 </div>`
 
 
